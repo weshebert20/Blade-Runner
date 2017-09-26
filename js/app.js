@@ -6,7 +6,8 @@ $( document).ready(function() {
             $("#playerOne").animate({left: "+=40"},100);   
         } 
 // declare winner by setting a position and set html player 1 won
-        if($("#playerOne").position().left > 1100){
+        if($("#playerOne").position().left > 1000){
+            alert("Player One Won");
             $(".winnerPlacement").html("Player One Wins");
         }
     });
@@ -17,7 +18,8 @@ $( document).ready(function() {
             $("#playerTwo").animate({left: "+=40"},100);    
         } 
 // declare winner by setting a position and set html player 2 won
-        if($("#playerTwo").position().left > 1100){
+        if($("#playerTwo").position().left > 1000){
+            alert("Player Two Won");
             $(".winnerPlacement").html("Player Two Wins");
         }
 	});
